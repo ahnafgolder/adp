@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia Doctor's Point</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e6f7ff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0033cc 50%, #0099ff 50%);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .header-text {
+            color: white;
+        }
+
+        .header-text h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .header-text p {
+            font-size: 1.2em;
+        }
+
+        .contact-info {
+            color: white;
+            text-align: right;
+        }
+
+        .doctors-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .section-title {
+            color: #0033cc;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .doctor-card {
+            padding: 15px;
+            border-radius: 25px;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            display: block;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .doctor-card:nth-child(1) { background-color: #00b3b3; }
+        .doctor-card:nth-child(2) { background-color: #003399; }
+        .doctor-card:nth-child(3) { background-color: #33cc33; }
+        .doctor-card:nth-child(4) { background-color: #cc9900; }
+        .doctor-card:nth-child(5) { background-color: #cc00cc; }
+        .doctor-card:nth-child(6) { background-color: #0033cc; }
+        .doctor-card:nth-child(7) { background-color: #0f753d; }
+        .doctor-card:nth-child(8) { background-color: #a0381e; }
+        .doctor-card:nth-child(9) { background-color: #339933; }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-info {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .doctors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="/api/placeholder/40/40" alt="Asia Doctor's Point Logo" />
+                </div>
+                <div class="header-text">
+                    <h1>Asia Doctor's Point</h1>
+                    <p>Sadar Road, Bhola</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h2>Asia Doctor's Point</h2>
+                <p>017-2626-9494</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="doctors-section">
+                <h2 class="section-title">বিশেষজ্ঞ ডাক্তারগণ</h2>
+                <div class="doctors-grid">
+                    <a href="dr-faysal.html" class="doctor-card">ডাঃ মোঃ ফয়সাল</a>
+                    <a href="dr-kader.html" class="doctor-card">ডাঃ মোঃ আবদুল কাদের</a>
+                    <a href="dr-shamsul.html" class="doctor-card">ডাঃ মুহাম্মদ শামসুল আলম</a>
+                    <a href="dr-khaled.html" class="doctor-card">ডাঃ খালেদ হাসান (অনি)</a>
+                    <a href="dr-samia.html" class="doctor-card">ডাঃ সামিয়া রহমান</a>
+                    <a href="dr-sami.html" class="doctor-card">ডাঃ সামি আহমেদ</a>
+                    <a href="dr-sujana.html" class="doctor-card">ডাঃ সুজানা হায়দার</a>
+                    <a href="dr-saiful.html" class="doctor-card">ডাঃ সাইফুল ইসলাম</a>
+                    <a href="dr-afroza.html" class="doctor-card">ডাঃ আফেরোজা বেগম</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
